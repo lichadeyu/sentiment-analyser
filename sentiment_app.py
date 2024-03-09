@@ -68,7 +68,7 @@ def main():
 
 	menu = ["Home","About"]
 	# Navigation bar at left top corner
-	st.sidebar.image("emojis\Picture.png", width=200)
+	#st.sidebar.image("emojis\Picture.png", width=200)
 	choice = st.sidebar.radio('Navigation', ['Home', 'About'])
 
 
@@ -163,12 +163,12 @@ def main():
 					color='metric')
 				st.altair_chart(c,use_container_width=True)
 				# Display sentiment label with big emoji
-				if sentiment.polarity > 0:
-					st.image('emojis/green-.png', caption="Positive Sentiment", width=200)
-				elif sentiment.polarity < 0:
-					st.image('emojis/red-.png', caption="Negative Sentiment", width=200)
-				else:
-					st.image('emojis/yellow-.png', caption="Neutral Sentiment", width=200)
+				# if sentiment.polarity > 0:
+				# 	st.image('emojis/green-.png', caption="Positive Sentiment", width=200)
+				# elif sentiment.polarity < 0:
+				# 	st.image('emojis/red-.png', caption="Negative Sentiment", width=200)
+				# else:
+				# 	st.image('emojis/yellow-.png', caption="Neutral Sentiment", width=200)
 
 				
 				
